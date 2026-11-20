@@ -1,0 +1,2 @@
+<footer class="site-footer"><div class="container"><div class="footer-top"><a class="brand" href="<?= BASE_URL ?>/index.php"><?= brand_mark() ?> STEINS GATE</a><span>Preserving Memories, Connecting Generations.</span><a href="#top" class="back-top">BACK TO TOP ↑</a></div><div class="footer-bottom"><span><?= e(COPYRIGHT_TEXT) ?></span><span>IPA 2 · MAN 2 PADANG PANJANG</span></div></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="<?= BASE_URL ?>/assets/js/main.js"></script></body></html>

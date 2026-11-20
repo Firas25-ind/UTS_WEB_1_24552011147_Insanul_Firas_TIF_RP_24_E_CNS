@@ -1,0 +1,27 @@
+STEINS GATE - CRUD KONTEN ADMIN
+
+File yang diperbarui:
+- dashboard/jadwal.php: CRUD jadwal pelajaran
+- dashboard/kegiatan.php: CRUD agenda kegiatan
+- dashboard/pengumuman.php: CRUD pengumuman dan status aktif/arsip
+- dashboard/galeri.php: CRUD galeri dengan upload gambar
+- includes/admin_crud_helpers.php: pemeriksaan role admin, CSRF, dan flash message
+- assets/css/dashboard-pages.css: styling tambahan kontrol admin
+
+INSTALASI:
+1. Backup folder proyek dan database terlebih dahulu.
+2. Ekstrak ZIP ini ke folder sementara.
+3. Salin/merge file sesuai struktur ke folder proyek STEINS GATE.
+4. Buat folder assets/uploads/galeri/ jika belum ada dan pastikan PHP dapat menulis ke folder tersebut.
+5. Tidak ada perubahan struktur database dan tidak perlu menjalankan SQL tambahan.
+6. Pastikan akun admin memiliki users.role = admin dan login ulang agar session memuat role terbaru.
+
+AKSES:
+- Admin: dapat tambah, lihat, ubah, hapus jadwal, kegiatan, pengumuman, dan galeri.
+- Siswa: hanya dapat melihat data; pengumuman arsip tidak ditampilkan.
+
+CATATAN:
+- Aksi perubahan data memakai POST dan token CSRF.
+- Penghapusan foto galeri juga menghapus file lokal yang berada di assets/uploads/galeri.
+- Foto galeri menerima JPG, PNG, WEBP maksimal 5 MB.
+- Uji di salinan proyek terlebih dahulu sebelum mengganti proyek aktif.
